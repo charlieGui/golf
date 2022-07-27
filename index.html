@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil - Le CEFii Golf</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/878534cf28.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <nav class="flex">
+              
+                <a href="index.html" title="Retour Accueil">
+                    <img src="images/logos/logo-golf.png" alt="Logo CEFii-Golf" width="340">
+                </a>
+                <!--<img src="images/logos/balle.png" alt="balle">
+                <img src="images/logos/fx-right.png" alt="aile droite">
+                <img src="images/logos/fx-left.png" alt="aile gauche"> -->
+
+                <label for="menu"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="menu" name="menu">
+                <ul class="flexNav">
+                    <li><a  class="actif" href="index.html" title="Acceuil">Accueil</a></li>
+                    <li><a href="#" title="Parcours">Parcours</a></li>
+                    <li><a href="#" title="Le domaine">Le domaine <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="sousmenu">
+                            <li><a href="#" title="Le parc">Le parc</a></li>
+                            <li><a href="#" title="Hôtel">Hôtel</a></li>
+                            <li><a href="#" title="Restaurant">Restaurant</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Les tournois">Les tournois</a></li>
+                    <li><a href="tarifsContacts.html" title="Tarifs et contacts">Tarifs & Contacts</a></li>
+                </ul>
+            </nav>
+            
+
+            <header>
+               <h1>Bienvenue<br>au Golf du CEFii !</h1>
+             </header>
+            <div class="flexCta">
+                <div>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h3>Nos évènements</h3>
+                    <p>Inscrivez-vous au prochain tournoi de Golf</p>
+                    <hr>
+                </div>
+                <div>
+                    <i class="fa-solid fa-golf-ball-tee"></i>
+                    <h3>Nos services</h3>
+                    <p>Découvrez tous nos services disponibles à l'année</p>
+                    <hr>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h3>Information</h3>
+                    <p>Les parcours sont momentanément fermés</p>
+                    <hr>
+                </div>
+            </div>
+            <main class="accueil">
+                
+                <div class="gridConteneur">
+                    <section>
+                        <div class="flexSection">
+                            <img class="then" src="images/a-propos.jpg" alt="Golfeur">
+                            <div class="first">
+                                <h2>&Agrave; propos de nous</h2>
+                                <p>
+                                    Codifié en Écosse en 1754 par le Royal & Ancient Golf Club de Saint Andrews, le golf est un
+                                    sport de précision se jouant en plein air,
+                                    qui consiste à envoyer une balle dans un trou à l'aide de clubs.
+                                    Le but du jeu consiste à effectuer, sur un parcours défini, le moins de coups possible.
+                                    Précision, endurance, technicité, concentration
+                                    sont des qualités primordiales pour cette activité.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flexSection">
+                            <img class="then" src="images/en-savoir-plus.jpg" alt="Jouer de golf">
+                            <div class="first">
+                                <h2>En savoir plus</h2>
+                                <ul>
+                                    <li><a href="#" title="Votre licence">Votre licence</a></li>
+                                    <li><a href="#" title="Vos droits">Vos droits</a></li>
+                                    <li><a href="#" title="Votre parcours">Votre parcours</a></li>
+                                    <li><a href="#" title="Vos soirées">Vos soirées</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <article class="right">
+                        <h2>&Agrave; la une</h2>
+                        <div >
+                            <figure>
+                                <img src="images/a-la-une.jpg" alt="Balle de Golf" width="100%">
+                                <figcaption>31/07</figcaption>
+                            </figure>
+                            <div>
+                                <p>Comment augmenter la puissance de votre swing ?</p>
+                                <p>
+                                    Pour gagner de la vitesse il faut disposer d'énergie et l'utiliser au mieux. À la montée nous
+                                    accumulons de l'énergie potentielle de pesanteur.
+                                    Pendant la descente nous transformons cette énergie en énergie cinétique avec un minimum
+                                    de pertes pour accélérer jusqu'au finish.
+                                </p>
+                                    <a href="#" title="Lire la suite">Lire la suite &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <section>
+                    <h2 class="mLeft">Découvrez notre dernière vidéo !</h2>
+                   
+                    <iframe 
+                        class="video"
+                        width="100%" height="700"
+                        src="https://www.youtube.com/embed/DbNQ52R0zNU" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                   </iframe>
+                
+                </section>
+                <aside>
+                    
+                    <form method="post" action=".php">
+                        
+                        <div class="news">
+                            
+                            <i class="fa-regular fa-envelope"></i>
+                            <label  for="mail">Inscription à la newsletter</label>
+                            <input type="email" id="mail" name="mail" placeholder="Votre adresse email" required>
+                            
+                            <div>
+                               <input type="submit" value="Valider">
+                            </div>
+                            
+                        </div>
+                       
+                    </form>
+                </aside>
+            </main>
+
+            <footer>
+                <div class="flexFooter">
+                    <ul class="flexCol link">
+                        <li><a href="index.html" title="Acceuil">Accueil</a></li>
+                        <li><a href="#" title="Parcours">Parcours</a></li>
+                        <li><a href="#" title="Le domaine">Le domaine</a></li>
+                        <li><a href="#" title="Les tournois">Les tournois</a></li>
+                        <li><a href="tarifsContacts.html" title="Tarifs et contact">Contact</a></li>
+                    </ul>
+
+                    <address class="flexCol about">
+                        <i class="fa-solid fa-location-dot"></i>
+                        18 rue du Green<br>
+                        49049 GOLF-LAND
+                    </address>
+
+                    <div class="flexCol about">
+                        <h3>Suivez-nous !</h3>
+                        <div>
+                            <a href="https://www.instagram.com/" title="Instagram" target="_blanck"><i class="fa-brands fa-instagram"></i></a>
+                            <a  href="https://fr-fr.facebook.com/" title="Facebook" target="_blanck"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p>&copy; Copyright | Production interne | &reg; Tous droits réservés</p>
+            </footer>
+        </div>
+    </body>
+</html>
