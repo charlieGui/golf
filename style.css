@@ -1,983 +1,238 @@
-            /* STYLE COMMUN A ROUS LES ECRANS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
+.wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
 body{
-    font-family: "Open sans", sans-serif;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
 }
 
 img{
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
 
-.gridConteneur, .accueil section h2{
-   margin: 0 10px;
-}
-
-.accueil section h2, .right h2{
-    margin-left:  3px;
-}
-
-iframe{
-    max-width: 100%;
-}
-
-.video{
-    margin-top: 1em;
-}
-
-
-.wrapper{
-    max-width: 1280px;
-    margin: 0 auto;
-    border: 1px solid #F6F1EE;
-}
-
-*{
-   text-decoration: none;
-   list-style-type: none;
-}
-
-select, input[placeholder], textarea[placeholder]{
-    font-family: "Open Sans", sans-serif;
-    font-style: italic;
-    font-size: .8rem;
-    padding: 1em;
-}
-
-
-/* Menu Principal */
 .flex{
     display: flex;
 }
 
-nav{
-    border-bottom: 7px solid #BDA672;
-    padding-top: 1em;
+header{
+    width: 100%;
+    position: absolute;
+    z-index:15;
 }
 
-nav ul{
-    flex: 1;
-    list-style-type: none;
-    padding-top: 1em;
+header *{
+    flex: 1 1 33.33%;
+    align-items: center;
 }
 
-nav li{
-    flex:1 1 auto;
+.coming{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Ou Roboto ? */
+    letter-spacing: 20px;
+    display: none;
+  }
+
+header div:first-of-type{
+
+    text-align: right;
+}
+
+header div:last-of-type{
     text-align: center;
+}
+
+.image{
+
+    background-color: #111;
+}
+main{
     position: relative;
 }
-
-.sousmenu li {
-    padding: 0.5em;
-    border-bottom: 1px solid #BDA672;
-}
-
-.sousmenu{
+.containerContact{
+    padding-top: 1%;
+    color: black;
+    text-align: center;
     position: absolute;
-    max-height: 0px;
     width: 100%;
-    background-color: #FFF;
-    transition: 1s linear;
-    overflow: hidden;
-    padding: 0;
-    z-index: 100;
+    top: 25%;
+    z-index: 10;
 }
-nav li:hover .sousmenu{
-    max-height: 300px; 
+#intro{
+    font-size: 1.25em;
+    display: none;
 }
 
-nav li a{
-    padding: 0.25em 0;
+.contact{
+    margin-top: 6em;
+    padding: 1% 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.2);
+    color:black;
+    font-size: 2.25em;
+}
+
+.contact :first-child{
+   letter-spacing: 2px;
+   margin-bottom: .3em;
+}
+
+.containerContact :last-child{
+   font-weight: bold;
+}
+
+footer{
+    color: white;
+    background-color:#111 ;
+    padding: 1em 1em .5em 1em;
+}
+
+footer aside{
+   width:60%;
+   margin: 0 auto;
+}
+
+aside h3{
+    color:rgb(70, 63, 177);
+    margin-bottom: 1em;
     text-align: center;
     text-transform: uppercase;
-    color:  #3B3A3A;
 }
 
-nav i{
-    color:  #BF9A3C ;
-    vertical-align: center;
-}
-
-nav li a:hover{
-    color: #BF9A3C ;
-}
-
-.actif{
-    color: #BF9A3C;                     
-    border-bottom: 2px solid #BF9A3C;       
-}
-
-/* Header */
-
-
-header{
-    position: relative;
-}
-
-header h1{
-    font-family: 'Lustria', serif;
-    color: white;
-    text-shadow: 0 0 5px black;
-    position: absolute;
-    bottom: 35%;
-    left: 10%;
-    font-size: 4em;
-}
-
-/* CTA */
-
-.flexCta > div{
-    width: 20%;
-    border:1px solid #F6F1EE; ;
-    color: #3B3A3A;
-    text-align: center;
-    padding: 2em 1.5em;
-    background-color: #FFF;
-    transform: translateY(-50%);
-}
-
-.flexCta i{
-    margin-bottom: 0.5em;
-    font-size: 2.5em;
-    color:  #BF9A3C;
-}
-
-.flexCta :nth-child(2){
-    margin: 0 -5em;
-}
-
-.flexCta > div hr{
-    width: 25%;
-    height: 1px;
-    background-color: #BF9A3C;
-    margin: 2em auto;
-}
-
-/*Accueil - Section*/
-    .gridConteneur h2{
-    font-family: 'Lustria', sans-serif;
-    border-bottom: 3px solid #BDA672;
-    margin-top: 0;
-    padding-bottom: .5em;
-}
-
-.gridConteneur p, a{
-    color: #3B3A3A;
-}
-
-
-.flexSection li{
-    list-style-image: url("images/drapeau-liste.png");
-    text-decoration: initial;
-}
-
-.right figure{
-    margin: 0;
-    position: relative;
-}
-
-.right figcaption{
-    position: absolute;
-    bottom: 0.15em;
-    right: 0;
-    padding: .25em;
-    background-color: #BF9A3C;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-}
-
-.right a{
-    display: block;
-    background-color: #BF9A3C;
-    width: 55%;
-    padding: 0.5em;
-    border-radius: 3px;
-    color: white ;
- }
-
- /* Newsletter*/
-.accueil  section h2{
-    display: inline-block;
-    font-family: 'Lustria', sans-serif;
-    border-bottom: 2px solid #BDA672;
-    padding: .5em 0;
-}
-
-.news{
-    border-bottom:2px solid #BDA672;
-    border-top: 2px solid #BDA672;
-    padding: 2em;
-    width: 75%;
-    margin: 0 auto;
-    text-align: center; 
-}
-
-.news i{
-    font-size: 2em;
-    color: #BF9A3C;
-    vertical-align: middle;
-}
-
-.accueil input[type="email"]{
-    padding:  0.4em 0.4em 0.2em 0.5em;
-    border: 1px solid #BDA672;
-    border-radius: 3px;
-}
-
-.news div{
-    display: inline-block;
-}
-
-input[type="submit"]{
-    border: none;
-    padding: .7em 1.2em .4em 1.2em;
-    color: #FFF;
-    font-size: .8em;
-    font-weight: bold;
-    background-color: #BF9A3C;
-    border-radius: 3px;
-}
-
-/* Footer*/
-footer{
-    color: #FFF;
-    background-color: #3B3A3A;
-    border-top: 7px solid #BDA672;
-    }
-
-.flexFooter{
-    border-bottom: 2px solid #FFF ;
-    width: 80%;
-    margin: 0 auto;
-    padding:  1.5em 0;
-   }
-
-.about{
-    text-align: center;
-}
-
-.flexFooter a{
-    color: #FFF;
-}
-
-.flexCol a[title]{
-    padding:1em;
-}
-
-footer i{
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-    color: #FFF;
-}
-
-footer p{
-    text-align: center;
-    font-size: 0.80em;
-    padding: 1.5em;
-}
-
-/*Contact - Tableau*/
-.price{
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 4em;
-    border-bottom: 2px solid #BDA672;
-}
-
-.price h2{
-    font-family: 'Lustria', serif;
-    width: 40%;
-    border-bottom: 2px solid #BDA672;
-    padding-bottom: .5em;
-}
-
-.price p td{
-    color: #3B3A3A;
-}
-
-.price table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1em;
-}
-
-.price th, td{
-    padding: 1em;
-    text-align: center;
-    border: 1px solid #BDA672;
-}
-
-.price tr :first-child{
-    text-align: left;
-}
-
-tr:nth-child(2n+1){
-    background-color: #F6F1EE;
-}
-
-.price small{
-    font-style: italic;
-}
-
-/*Formulaire de contact*/
-.marge{
-    width: 80%;
-    margin: 0 auto;
-    padding: 3em 0;
-    border-bottom: 2px solid #BDA672;
-}
-
-.contact section h2{
-    font-family: 'Lustria', serif;
-    width: 40%;
-    padding-bottom: .5em ;
-    border-bottom: 2px solid #BDA672;
-}
-
-.marge p, label{
-    color:#3B3A3A;
-}
-
-.marge form label{
-    display:block;
-}
-
-.marge form input:not([type="submit"]), select, textarea{
-    box-sizing: border-box;
-    width: 100%;
-    border: none;
-    background-color: #F6F1EE;
-    margin-bottom: 1em;
-}
-
-.flexform form div:last-child{
-    margin-left: 81%;
-}
-
-/* FAQ */
-.contact article{
-    width: 80%;
-    margin: 0 auto;
-    padding: 4em 0;
-    border-bottom: 2px solid #BDA672;
-}
-
-.contact article h2{
-    font-family: 'Lustria', serif;
-    border-bottom: 2px solid #BDA672;
-    padding-bottom: .5em;
-}
-
-.contact article ul{
-    padding: 0;              /*Annule le décalage*/
-    position: relative;    
-}
-
- .contact li h3{
-     margin: 0;
-    background-color: #F6F1EE;
-    padding: 1.25em 0 .75em .5em;
- }
-
- .contact article p{
-     margin-top: 0;
-     background-color: #F6F1EE;
-     padding: 0em .5em;
-     font-style: italic;
-}
-
-.contact article i{
-    color: #BF9A3C;
-    position: absolute;
-    left: 95%;
-}
-
-/* Transition FAQ */
-.contact article p{
-    height: 0;
-    color:transparent;
-    overflow: hidden;
-    transition: .5s linear;
-}
-
-.contact li:hover p{
-    height: 40px;
-    color: initial;
-}
-
-                 /* MEDIA QUERIES */
-                
-                 /*ECRAN > 1024px*/
-@media only screen and (min-width: 64em){
-/*Menu principal */
-    .flexNav{
-    display: flex;
-}
-
-
-   
-header{
-    width:100%;
-    height: 740px;
-    background-image: url("images/bandeau.png") ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-nav > label, nav > input{
-    display: none;
-}
-
-nav > label, nav > input{
-    display: none;
-}
-
-/*CTA*/
-.flexCta{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/*Main*/
-.gridConteneur{
-    display: grid;
-    grid-template-columns: 2fr 33%;
-}
-
-.right{
-    grid-column: 2;
-    grid-row: 1 / 3;
-    margin-right: 7.5em;
-}
-
-.flexSection img, .flexSection div{
-    flex: 0 1 33%;
-}
-
-.flexSection{
-    display: flex;
-    justify-content:space-evenly;
-    margin-bottom: 4em;
-    margin-left: 2em;
-}
-
-section h2[class="mLeft"]{
-    margin-left: 10%;
-}
-
-
-.accueil aside{
-    margin-top: 3em;
-    width: 100%;
-    height: 854px;
-    background: url("images/golfeur.jpeg");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-/*Footer*/
-.flexFooter{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flexCol{
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.link{
-padding: 0; 
-}
-
-.flexFooter>ul{
-    display:inline;
-}
-
-.right i{
-    margin-left: 2em;
-}
-
-.flexform{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.f45{
-    flex-basis: 45%;
-}
-
-.contact aside{
-    margin: 3em 0 .5em 0;
-}
-
-.contact article h2{
-    width: 40%;
-}
-
-.flexLogo{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-}
-
-.flexLogo li{
-    width: 25%;
-    margin: 1em;
-}
-    
-.flexLogo img{
-    width: 90%;
-    height: 6em;
-    padding: 1.5em 1em 1.5em 1em;
-    background-color: #BF9A3C;
-}
-
-
-}
-
-
-
-                /*500px > ECRAN < 1024*/
-@media only screen and (min-width: 32em) and (max-width: 63.99em){
-*{
-    box-sizing: border-box;
-}
-
-
-/*Menu Burger*/
-.flexNav{
-    background-color: #FFF;
-    position: absolute;
-    height: 0;
-    width: 100%;
-    padding-top: 0;
-    top: 5em;
-    overflow: hidden;
-    z-index:100;
-    transition: 1s;
-}
-
-
-.sousmenu > li{
-    margin-right: 10%;
-    text-align: left;
-    padding: 1.5em 0;
-}
-.flexNav>li{
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 1.5em 0 3em 0em;
-}
-
-.flex{
-    justify-content: space-around;  
-    align-items: center;
-}
-
-.flex > input[type="checkbox"]{
-    display: none;
-    width: 3em;
-    height: 3em;
-}
-                                       
-.flex > input[type="checkbox"]:checked + ul{
-    height: 500px;
-}
-
-.flex > a, .flex > label{
-    flex: 0 1 45%;
-    margin-bottom: .25em;
-}
-
-.flex > label{
-    font-size: 2.5em;
-    text-align: right;
-}
-
-/*page Accueil*/
-header {
-    height: 500px;
-    background-image:url("images/bandeauM.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.flexCta{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.flexCta > div{
-    width: 35%;
-}
-
-.flexCta > :nth-child(1){
-    transform: translate(10%, -50%);
-}
-
-.flexCta > :nth-child(2){
-    transform: translate(70%, -50%);
-}
-
-.flexCta > :nth-child(3){
-    transform: translate(-85%, 55%);
-}
-
-.flexSection{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.flexSection img{
-    width: 30%;
-    margin: 1em 10% 5% 0;
-}
-
-.gridConteneur > section{
-    margin-top: 15em;
-}
-
-.right > div { 
-    display: flex;
-    justify-content: space-between;
-}
-    
-.right h2{
-    width: 40%;
-}
-
-.right > div > figure{
-    width: 110%;
-    }
-    
-.right p{
-    padding: 0 10% 0 5%;
-}
-    
-.right a{
-    width: 30%;
-    margin-left: 5%;
-}
-  
-div > p {
-    margin-top: 0;
-}
-
-.accueil aside{
-        height: 500px;
-        background-image:url("images/golfeurM.jpeg");
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position: bottom;
-    }
-
-.news{
-    box-sizing: border-box;
-    width: 100%;
-}
-    
-.flexLogo{
-    display: none;
-}
-
-.flexFooter{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.flexFooter> ul{
-    display: none;
-}
-   
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/*Contact*/
-.price{
-    margin-top: 15em;
-    width: 100%;
-   padding: 1em 0;
-}
-
-.contact article, .contact section{
-    margin: 0 10px;
-}
-
-.marge{
-    width: 100%;
-    margin-top: 0;
-    padding-bottom: 1em;
-}
-   
-.m{
+footer > p{
     margin-top: 2em;
-    padding-bottom:0;
-}
-
-.contact article{
-    box-sizing: border-box;
-    width: 100%;
-    padding: 1em;
-}
-
-.video{
-    height: 450px;
-    width: 100%;
-    margin-bottom: 2em;
-}
-}
-
-
-            /*ECRAN < 500px */
-@media only screen and (max-width: 31.99em){
-
-/*Menu Burger*/
-.flexNav{
-    background-color: #FFF;
-    position: absolute;
-    height: 0;
-    top: 7em;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    z-index:100;
-    transition: 1s;
-}
-
-
-.flexNav > li{
-    padding: 1.5em 1em;
-}
-
-.sousmenu > li{
-    padding: 1.5em 0;
-}
-
-.flex{
-    justify-content: space-around;  
-    align-items: center;
-}
-
-.flex > input[type="checkbox"]{
-    display: none;
-    width: 3em;
-    height: 3em;
-}
-                                   
-.flex > input[type="checkbox"]:checked + ul{
-    height: 400px;
-}
-
-.flex > a, .flex > label{
-    flex: 0 1 45%;
-    margin-bottom: .25em;
-}
-
-.flex > label{
-    font-size: 2.5em;
-    text-align: right;
-}
-
-.flexNav>li{
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-
-.sousmenu > li{
-    text-align: left;
-}
-
-/*Aceuil*/
-header{
-    height: 500px;
-    background-image: url("images/bandeauS.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-    
-header h1{
-    top: 8em;
-    font-size: 2em;
     text-align: center;
+    font-size: .6em;
+    letter-spacing: 2px;
 }
+
+footer a{
+    color: rgb(78, 57, 136);
+}
+@media screen and (min-width:866px){
     
-.flexCta{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .flexCol img:last-child{
+        display: none;
+    }
 
-.flexCta > div{
-    width: 50%;
-    margin: 5px;
-    transform:translateY(-15%);
-}
-
-.flexSection{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3em;
-}
-
-.flexSection h2{   
-    width: 50%;
-    margin-bottom: 0;
-}
-
-.flexSection img{
-    width: 55%;
-    margin: 0 auto;
-}
-
-.first{
-    order: 1;
-}
+    .contact{
+        width: 38%;
+        flex-direction: column;
+    }
     
-.then{
-    order: 2;
 }
-
-.right{
-    width: 100%;
-}
+@media screen and (min-width: 425px) and (max-width: 865px){
+    .none{
+        display: none;
+    }
+    .coming{
+        font-size: 1.25em;
+    }
     
-.right h2, .accueil section h2, figure{
-    width:50%;
-}
-
-.right a{
-    width: 30%;
-}
-
-.accueil aside{
-    height: 350px;
-    background-image:url("images/golfeurS.jpeg");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-
-.news i{
-    display: none;
-}
+    .flexCol img:last-child{
+        display: none;
+    }
+    .containerContact{
+        padding-top: 0;
+    }
     
-.news > input{
-    width: 85%;
-    margin: .25em 0;
-}
-
-aside form {
-    border-bottom:2px solid #BDA672;
-    border-top: 2px solid #BDA672;
-}
-
-.news{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;   
-    border: none;
-    padding: 2em 0;
-    width: 50%;
-}
-
-.flexLogo{
-    display: none;
-}
-
-.flexFooter{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.flexFooter> ul{
-    display: none;
-}
+    #intro {
+        font-size: 1.15em;
+       
+    }
     
-.about{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
-}
-        
-.about a > i{
-    font-size: 4em;
-}
+    .coming{
+        letter-spacing: 10px;
+    }
 
-/*Page Contact*/
-.price{
-    width: 95%;
-    margin: 0 auto;
-    padding-bottom: 2em;
-}
+    .contact{
+        margin-top: 4em;
+        width: 38%;
+        flex-direction: column;
+    }
+    
+    .contact p{
+       font-size: .7em;
+    }
 
-.contact section h2{
-    width: 60%;
-    margin-left: 2%;
+    footer aside {
+        width: 90%;
+    }
 }
 
-.contact section p{
-    margin-left: 2%;
-}
+@media screen and (max-width: 680px){
+    body{
+        background-color: #222;
+    }
+   
+    p.coming{
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        padding: .5em 0;
+    }
+    .flexCol img:first-child{
+        display: none;
+       
+    }
+    .flexCol img:last-child{
+        display: block;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        padding: 2% 0;
+        width: 6em;
+    }
+    .flexCol{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        padding: 4% 0;
+        position: initial;
+        background-color: #111;
+    }
+   
+    #intro{
+        position: absolute;
+        top: 2%;
+        padding: 0 2%;
+        color: black;
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+    .image{
+        background-color: black;
+    }
+    .containerContact{
+        padding: 0;
+        position: initial;
+        background-color: #111;
+    }
 
-.marge{
-    width: 100%;
-    margin: 0 auto;
-    padding: 1.5em 0;
-}
+    div.contact{
+        margin: .5% 1% 1% 1%;
+        padding: 4% 0;
+        color: white;
+        font-size: 2em;
+        font-weight: 100;
+    }
 
-.m{
-    width: 95%;
-    margin: 0 auto;
-}
-
-.f45> iframe{
-    margin: 2em 0 .5em 0;
-}
-
-
-.contact article{
-    width: 95%;
-    margin: 0 auto;
-    padding-top: 1.5em;
-}
-
-.contact h2{
-    width: 60%;
-}
-
-.contact li h3{
-    padding-bottom: 1.25em;
-}
-
-.contact  h3, p{
-    font-size: .95em;
-}
-
-
-.video {
-    height: 300px;
-    width: 100%;
-    margin-bottom: 2em;
-}
+    footer aside{
+        width: 90%;
+        margin: 0 auto;
+    }
 
 }
